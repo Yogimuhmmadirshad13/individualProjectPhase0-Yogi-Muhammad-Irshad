@@ -14,7 +14,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background: url(Image/Background2.jpg);
+    background: url(image/Background2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
