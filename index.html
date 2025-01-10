@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+    
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="weatherContainer">
+
+            <div class="city">
+                <img src="public/image/Sky.png" style="width: 100%; height: 200px;" alt="">
+            </div>
+
+            <div class="weatherInfo">
+                <div class="current-weather">
+                    <div class="location">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <h1 class="country-city text-l font-medium">Jakarta, Indonesia</h1>
+                        <!-- <h4 class="current-date font-normal text-gray-700" style="color: gray;">Sunday, 05 Jan 2024</h4> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <input type="text grey" placeholder="search-city" id="city">
+                <button class="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-4 py-3 mx-2 rounded-full shadow-lg transform transition-all  hover:scale-110"> Search </button>      
+            </div>
+
+
+            <div class="weatherSummary">
+                <img id="weather-icon" class="weather-icon" src=""></img>
+                <div class="weather-summary-info">
+                    <h1 class="temp-info text-4xl font-bold text-blue-700">29 °C</h1>
+                    <div class="condition-info text-2xl font-semibold py-2">Clouds</div>
+                    <!-- <h4 class="condition-info text-2xl font-semibold py-2">Clouds</h4> -->
+                </div>
+            </div>
+
+            <div class="weatherCondition">
+                <div class="condition-info">
+                    <div class="humidity">
+                        <img src="/public/image/Humidity_Icon.png" style="width: 30px; height: 30px; padding-top: 2px; padding-bottom: 2px;" alt="Humidity Icon">
+                        <div class="humidityHeader text-xl font-semibold">64%</div>
+                        <!-- <h1 id="humidity" class="humidity text-xl font-semibold">64 %</h1> -->
+                        <h4 class="humidity-info font-medium" style="color: gray;">Humidity</h4>
+                    </div>
+
+                    <div class="wind">
+                        <img src="/public/image/Wind_Icon.png" style="width: 30px; height: 30px; padding-top: 2px; padding-bottom: 2px;" alt="Wind Icon">
+                        <div class="windHeader text-xl font-semibold">5 km/h</div>
+                        <!-- <h1 class="wind text-xl font-semibold">5 km/h</h1> -->
+                        <h4 class="wind-info font-medium" style="color: gray;">Wind</h4>
+                    </div>
+
+                    <div class="temp">
+                        <img src="/public/image/Temp_Icon.png" style="width: 30px; height: 30px; padding-top: 2px; padding-bottom: 2px;" alt="Feels Like">
+                        <div class="tempFeel text-xl font-semibold">29 °C</div>
+                        <!-- <h1 class="temp text-xl font-semibold">29 °C</h1> -->
+                        <h4 class="temp-info font-medium" style="color: gray;">Feels Like</h4>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        
+        <div class="forecastContainer">
+            <div class="forecast-header">
+                <h1 class="foreCast-info text-xl font-bold py-2" style="color: black;">7-Day Forecast</h1>
+            </div>
+            
+            <div class="forecast-info">
+                <!-- <div class="forecastContent">
+                    <h4 class="forecast-date font-normal text-gray-700 py-2" style="color: gray;">Monday, 06 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <div class="date-info text-xl font-semibold" style="color: black;">Mon</div>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <div class="humidity-content text-xl font-medium" style="color: black;">64 %</div>
+                        <div class="wind-content text-xl font-medium" style="color: black;">5 km/h</div>
+                        <div class="temp-content text-xl font-medium" style="color: black;">29 °C</div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="forecastContent2">
+                    <h4 class="forecast-date font-normal text-gray-700 py-2" style="color: gray;">Tuesday, 07 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <h4 class="date-info text-xl font-semibold" style="color: black;">Tue</h4>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <h4 class="humidity-content text-xl font-medium" style="color: black;">64 %</h4>
+                        <h4 class="wind-content text-xl font-medium" style="color: black;">5 km/h</h4>
+                        <h4 class="temp-content text-xl font-medium" style="color: black;">29 °C</h4>
+                    </div>
+                </div> -->
+            
+                <!-- <div class="forecastContent3">
+                    <h4 class="forecast-date font-normal text-gray-700 py-2" style="color: gray;">Wednesday, 08 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <h4 class="date-info text-xl font-semibold" style="color: black;">Wed</h4>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <h4 class="humidity-content text-xl font-medium" style="color: black;">64 %</h4>
+                        <h4 class="wind-content text-xl font-medium" style="color: black;">5 km/h</h4>
+                        <h4 class="temp-content text-xl font-medium" style="color: black;">29 °C</h4>
+                    </div>
+                </div> -->
+
+                <!-- <div class="forecastContent4">
+                    <h4 class="forecast-date font-normal text-gray-700 py-2" style="color: gray;">Thursday, 09 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <h4 class="date-info text-xl font-semibold" style="color: black;">Thu</h4>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <h4 class="humidity-content text-xl font-medium" style="color: black;">64 %</h4>
+                        <h4 class="wind-content text-xl font-medium" style="color: black;">5 km/h</h4>
+                        <h4 class="temp-content text-xl font-medium" style="color: black;">29 °C</h4>
+                    </div>
+                </div> -->
+
+                <!-- <div class="forecastContent5">
+                    <h4 class="forecast-date font-normal text-gray-700 py-2" style="color: gray;">Friday, 10 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <h4 class="date-info text-xl font-semibold" style="color: black;">Fri</h4>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <h4 class="humidity-content text-xl font-medium" style="color: black;">64 %</h4>
+                        <h4 class="wind-content text-xl font-medium" style="color: black;">5 km/h</h4>
+                        <h4 class="temp-content text-xl font-medium" style="color: black;">29 °C</h4>
+                    </div>
+                </div> -->
+
+                <!-- <div class="forecastContent6">
+                    <h4 class="forecast-date font-normal text-gray-700 py-2" style="color: gray;">Saturday, 11 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <h4 class="date-info text-xl font-semibold" style="color: black;">Sat</h4>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <h4 class="humidity-content text-xl font-medium" style="color: black;">64 %</h4>
+                        <h4 class="wind-content text-xl font-medium" style="color: black;">5 km/h</h4>
+                        <h4 class="temp-content text-xl font-medium" style="color: black;">29 °C</h4>
+                    </div>
+                </div> -->
+
+                <!-- <div class="forecastContent7">
+                    <h4 class="forecast-date font-normal text-gray-700" style="color: gray;">Sunday, 12 Jan 2024</h4>
+                    <div class="dailyWeather">
+                        <h4 class="date-info text-xl font-semibold" style="color: black;">Sun</h4>
+                        <img src="/public/Image/sun.png" style="width: 32px; height: 32px;"  alt="">
+                        <h4 class="humidity-content text-xl font-medium" style="color: black;">64 %</h4>
+                        <h4 class="wind-content text-xl font-medium" style="color: black;">5 km/h</h4>
+                        <h4 class="temp-content text-xl font-medium" style="color: black;">29 °C</h4>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="public/wmoCode.js"></script>
+    <script src="public/index.js"></script>
+
+</body>
+
+</html>
